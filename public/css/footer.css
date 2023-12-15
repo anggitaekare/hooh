@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  html{
+    background-color: #ffffff;
+  }
+
+  body{
+    font: 16px/1.6 arial, sans-serif;
+  }
+
+  header{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 190px;
+  }
+
+  header h1{
+    font: normal 32px/1.5 'Open Sans', sans-serif;
+    color: #e8a9a9;
+    padding-top: 16px;
+  }
+
+  header h2{
+    color: #000000;
+    font-size: 30px;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+  }
+  .footer{
+    background-color: #46458C;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 70px 50px;
+    margin-top: 80px;
+  }
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  @media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header{
+        padding-top: 40px;
+    }
+  }
+
+  .footer .footer-left{
+    display: flex;
+    align-items: center;
+  }
+
+  .footer p span{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 70px;
+  }
+
+  .footer .footer-left img{
+    width: 140px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-copyright{
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+    margin-right: 350px;
+    margin-left: 350px;
+  }
+
+  
+
+  .footer .footer-right{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer .footer-right i {
+    bfont-size: 24px;
+    margin-right: 10px;
+  }
+
+ 
+
+  .footer.footer-right p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+  }
+
+  .footer .footer-right img{
+    width: 150px;
+  height: auto;
+  margin-right: 100px;
+  margin-left: 100px;
+  }
+
+  .footer .footer-right p span{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-right: 20px;
+
+  }
+
+ 
