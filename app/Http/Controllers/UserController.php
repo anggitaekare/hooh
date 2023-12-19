@@ -11,20 +11,12 @@ use Ramsey\Uuid\Uuid;
 
 class UserController extends Controller
 {
-    //  public function insertUser(Request $request)
-    // {
-    //     $user = new Users();
-    //     $user->username = $request->input("username");
-    //     $user->email= $request->input("email");
-    //     $user->password = $request->input("password");
-    //     $user->save();
-    // }
 
  public function insertUser(Request $request)
     {
         $valid = $request->validate(
             [
-                'username' => 'required|string',
+                'name' => 'required|string',
                 'email' => ['required', 'email'],
                 'password' => 'required|string'
             ]
@@ -35,7 +27,7 @@ class UserController extends Controller
             $createds = explode(' ', $created);
 
             $user = new Users();
-            $user->username = $valid['username'];
+            $user->name = $valid['name'];
             $user->email = $valid['email'];
             $user->password = $createds[1] . $valid['password'] . $createds[0];
             $user->created_at = $created;
